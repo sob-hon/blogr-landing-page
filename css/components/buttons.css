@@ -1,0 +1,45 @@
+/* Buttons */
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+.btn {
+  font-family: Ubuntu;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 1.3rem 3rem;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: white;
+  color: hsl(355, 100%, 74%);
+}
+
+.btn--primary:hover {
+  background: hsl(355, 100%, 74%);
+  color: white;
+}
+
+.btn--white {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn--white:hover {
+  background-color: white;
+  color: hsl(355, 100%, 74%);
+}
+
+
+
