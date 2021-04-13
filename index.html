@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grow your audience and build your online brand."
+    />
+    <meta
+      property="og:title"
+      content="Blogr - Grow your audience and build your online brand."
+    />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
@@ -14,32 +23,245 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/components/buttons.css">
-    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/main.css" />
     <title>Blogr</title>
   </head>
+
   <body>
-
     <main class="app">
+      <header class="header container">
+        <div class="container">
+          <nav class="nav">
+            <a href="#"><img src="images/logo.svg" alt="Blogr logo" /></a>
 
-      <header class="header">
-        
-        <nav class="navbar">
-          <a href="#"><img src="/images/logo.svg" alt="Blogr logo"></a>
-          <ul>
-            <li>Product</li>
-            <li>Company</li>
-            <li>Connect</li>
+            <input
+              class="header__hamburger-input"
+              type="checkbox"
+              id="hamburger"
+              hidden
+            />
+
+            <div class="header__list-holder">
+              <ul class="list" id="myDIV">
+                <li class="nav__item">
+                  <a class="nav__head" href="#" onclick="Toggle(this)">
+                    Product
+                    <img
+                      class="nav__img"
+                      src="images/icon-arrow-light.svg"
+                      alt="dropdown arrow"
+                    />
+                  </a>
+
+                  <div class="nav__dropdown">
+                    <ul>
+                      <li><a href="#">Overview</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Market</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Integrate</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__head" href="#" onclick="Toggle(this)">
+                    Company
+                    <img
+                      class="nav__img"
+                      src="images/icon-arrow-light.svg"
+                      alt="dropdown arrow"
+                    />
+                  </a>
+
+                  <div class="nav__dropdown">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__head" href="#" onclick="Toggle(this)">
+                    Connect
+                    <img
+                      class="nav__img"
+                      src="images/icon-arrow-light.svg"
+                      alt="dropdown arrow"
+                    />
+                  </a>
+
+                  <div class="nav__dropdown">
+                    <ul>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="nav__register">
+                <li><a class="btn nav__btn--tranparent" href="#">Login</a></li>
+                <li>
+                  <a class="btn nav__btn--primary btn--primary" href="#"
+                    >Sign up</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <label class="header__hamburger-button" for="hamburger"> </label>
+          </nav>
+        </div>
+
+        <div class="header__content">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <ul class="header__link">
+            <li>
+              <a href="#" class="btn btn--primary btn--start">Start for free</a>
+            </li>
+            <li><a href="#" class="btn btn--white btn--learn">Learn More</a></li>
           </ul>
-          <a href="#" class="btn btn--primary">Login</a>
-          <a href="#" class="btn btn--primary">Sign up</a>
-        </nav>
-
+        </div>
       </header>
 
-      
+      <section class="description">
+        <h2 class="description__header">Desingned for the future</h2>
+        <div class="description__content">
+          <div class="description__left-column">
+            <h3 class="description__heading">
+              Introducing an extensible editor
+            </h3>
+            <p class="description__paragraph">
+              Introducing an extensible editor Blogr features an exceedingly
+              intuitive interface which lets you focus on one thing: creating
+              content. The editor supports management of multiple blogs and
+              allows easy manipulation of embeds such as images, videos, and
+              Markdown. Extensibility with plugins and themes provide easy ways
+              to add functionality or change the looks of a blog.
+            </p>
+            <h3 class="description__heading">Robust content management</h3>
+            <p class="description__paragraph">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+          <div class="description__right-column">
+            <img
+              src="images/illustration-editor-desktop.svg"
+              alt="editor illustration"
+              class="desktop-editor"
+            />
+            <img
+              src="images/illustration-editor-mobile.svg"
+              alt="editor illustration"
+              class="mobile-editor"
+            />
+          </div>
+        </div>
+      </section>
 
+      <section class="services">
+        <div class="services__container">
+          <div class="services__left-column">
+            <img
+              src="images/bg-pattern-circles.svg"
+              alt="circle pattern"
+              class="pattern"
+            />
+          </div>
+          <div class="services__right-column">
+            <h4 class="sercives__heading">State of the Art Infrastructure</h4>
+            <p class="services__content">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+        <img
+          src="images/illustration-phones.svg"
+          alt="phone illustration"
+          class="phone"
+        />
+      </section>
+
+      <section class="features">
+        <div class="features__left-column">
+          <img
+            src="images/illustration-laptop-desktop.svg"
+            alt="laptop illustration"
+            class="desktop-illustration"
+          />
+          <img
+            src="images/illustration-editor-mobile.svg"
+            alt="laptop illustration"
+            class="mobile-illustration"
+          />
+        </div>
+        <div class="features__right-column">
+          <h5 class="features__heading">Free, open, simple</h5>
+          <p class="features__content">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h5 class="features__heading">Powerful tooling</h5>
+          <p class="features__content">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__container">
+          <div class="footer__box">
+            <a href="#"><img src="images/logo.svg" alt="Blogr logo" /></a>
+          </div>
+          <div class="footer__box">
+            <h6 class="footer__header">Product</h6>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <h6 class="footer__header">Company</h6>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <h6 class="footer__header">Connect</h6>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <script src="./scpript/main.js"></script>
   </body>
 </html>

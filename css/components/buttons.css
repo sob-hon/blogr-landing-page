@@ -1,45 +1,52 @@
 /* Buttons */
 body {
-  background-color: white;
+  background-color: var(--white-color);
   overflow-x: hidden;
 }
 .btn {
-  font-family: Ubuntu;
+  max-height: 50px;
+  font-family: var(--ubuntu-font);
+  font-size: 0.9rem;
   margin: 1rem 0;
   outline: none;
   border: none;
   text-align: center;
   cursor: pointer;
-  padding: 1.3rem 3rem;
+  padding: 1rem 2.5rem;
   border-radius: 40px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  transition: all 0.5s;
+  display: inline-block;
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
-.btn--primary {
-  background-color: white;
-  color: hsl(355, 100%, 74%);
-}
-
-.btn--primary:hover {
-  background: hsl(355, 100%, 74%);
-  color: white;
-}
-
 .btn--white {
   background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
 }
 
 .btn--white:hover {
-  background-color: white;
-  color: hsl(355, 100%, 74%);
+  background-color: var(--white-color);
+  color: var(--primary-color);
 }
 
+.btn--primary {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
 
+.btn--primary:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.nav__btn--tranparent {
+  background-color: transparent;
+  color: var(--white-color);
+  margin-right: 0;
+}
 

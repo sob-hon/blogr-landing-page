@@ -1,0 +1,10 @@
+@import url("./customProperties.css");
+@import url("../normalize.css");
+@import url("../components/utils.css");
+@import url("./header.css");
+@import url("./buttons.css");
+@import url("./navigationBar.css");
+@import url("./descriptions.css");
+@import url("./services.css");
+@import url("./features.css");
+@import url("./footer.css");

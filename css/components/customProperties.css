@@ -1,0 +1,8 @@
+:root {
+  --primary-color:	#ff7a85;
+  --background-gradiant: 310deg,	#ff3d54 50%,
+    #ff8f70;
+  --white-color: #fff;
+  --ubuntu-font: "Ubuntu", sans-serif;
+  --overpass-font: "Overpass", sans-serif;
+}

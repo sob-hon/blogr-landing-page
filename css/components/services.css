@@ -1,0 +1,95 @@
+/* Services */
+
+.services {
+  background-color: #f7f2f2;
+  position: relative;
+}
+.services__container {
+  width: 100%;
+  padding: 8rem 10rem;
+  position: relative;
+  background: hsl(237, 17%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  overflow: hidden;
+}
+.services__left-column {
+  flex-basis: 40%;
+  position: relative;
+  background-image: url("/images/illustration-phones.svg") cover center;
+}
+
+.phone{
+  position: absolute;
+  left: 5rem;
+  top: -5rem;
+  z-index: 999;
+}
+
+.pattern{
+  position: absolute;
+  left: -30rem;
+  top: -50rem;
+  z-index: 1;
+  width: 240%;
+}
+
+.services__right-column{
+  flex-basis: 50%;
+}
+
+
+.sercives__heading {
+  font-size: 2.3rem;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+  font-family: var(--ubuntu-font);
+  font-weight: 700;
+}
+
+.services__content {
+  font-size: 1.1rem;
+  color: var(--white-color);
+  font-family: var(--ubuntu-font);
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+
+@media only screen and (max-width: 991px){
+  .services{
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services__container {
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
+
+  .services__right-column{
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .phone{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9rem;
+    z-index: 3;
+    width: 375px;
+  }
+
+  .pattern{
+    position: absolute;
+    left: -30rem;
+    top: -50rem;
+    z-index: 2;
+    width: 240%;
+  }
+}

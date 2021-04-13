@@ -1,0 +1,61 @@
+/* Footer */
+
+footer{
+  background-color:#f7f2f2;
+}
+
+.footer__container {
+  width: 100%;
+  padding: 4rem 10rem 6rem;
+  background: hsl(240, 10%, 16%);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top-right-radius: 6rem;
+}
+
+.footer__box {
+  flex-basis: 20%;
+}
+
+.footer__header {
+  font-size: 1rem;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+  font-family: var(--ubuntu-font);
+  font-weight: 500;
+}
+
+.footer__box li {
+  margin-bottom: 1rem;
+}
+
+.footer__box a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-size: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: var(--ubuntu-font);
+  font-weight: 400;
+}
+
+.footer__box a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .footer__container{
+    padding: 4rem 0 6rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer__box{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+}
